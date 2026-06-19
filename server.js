@@ -24,7 +24,7 @@ const server = http.createServer((req,res) =>
         console.log(req.url)
         res.statusCode = 200
         res.setHeader("Content-Type", "text/html; charset=utf-8")
-        res.end(quotes[getRandomInt(quotes.length -1)])
+        res.end(quotes[getRandomInt(quotes.length)])
     }
     else
     {
